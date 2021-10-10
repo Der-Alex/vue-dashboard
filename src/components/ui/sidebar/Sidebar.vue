@@ -7,16 +7,24 @@
     <div class="sidebar-header h-14 border-b border-gray-900 w-full flex items-center justify-center">
       <h2>Dashboard</h2>
     </div>
-    <nav class="sidebar-nav pt-8">
-      <sidebar-list />
+    <nav class="sidebar-nav h-full overflow-y-auto">
+      <ul class="pt-2 pb-20">
+        <sidebar-group
+          v-for="navigationGroup in navigation.state.navigation"
+          :key="navigationGroup.groupName"
+          :title="navigationGroup.groupName"
+          :navigationItems="navigationGroup.links"
+        />
+      </ul>
     </nav>
   </aside>
 </template>
 
 <script setup>
 import { inject } from '@vue/runtime-core';
-import SidebarList from './SidebarList.vue';
+import SidebarGroup from './SidebarGroup.vue';
 const sidebar = inject('sidebar');
+const navigation = inject('navigation');
 
 console.log('sidebar', sidebar);
 

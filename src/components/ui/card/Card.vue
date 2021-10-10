@@ -21,7 +21,7 @@ const props = defineProps({
   },
   fullColored: {
     type: Boolean,
-    default: '',
+    default: false,
   },
 });
 

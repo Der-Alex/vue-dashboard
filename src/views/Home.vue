@@ -8,14 +8,14 @@ let state = reactive({
   person: {},
 });
 onMounted(async () => {
-  const person = await swapi.fetchPeople(1);
-  state.person = person;
+  //const person = await swapi.fetchPeople(1);
+  state.person.name = 'Hans Peter';
 });
 </script>
 
 <template>
   <suspense>
-    <card type="success" :fullColored="false">
+    <card>
       <template v-slot:card-header>
         <h1>This is the Home View</h1>
       </template>

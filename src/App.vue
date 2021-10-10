@@ -4,13 +4,15 @@ import MainHeader from './components/ui/header/MainHeader.vue';
 import Sidebar from './components/ui/sidebar/Sidebar.vue';
 import sidebar from '@/store/modules/ui/sidebar';
 import swapi from '@/store/modules/ui/swapi';
+import navigation from '@/store/modules/navigation';
 
 provide('sidebar', sidebar);
 provide('swapi', swapi);
+provide('navigation', navigation);
 </script>
 
 <template>
-  <div class="dashboard bg-primary-darker text-gray-200 w-screen h-screen grid grid-cols-1">
+  <div class="dashboard relative overflow-hidden bg-primary-darker text-gray-200 grid grid-cols-1 min-h-screen">
     <main-header />
     <sidebar />
     <main class="p-8 md:pl-72 transition-all">
