@@ -1,25 +1,15 @@
+import { reactive, readonly } from '@vue/reactivity';
+
+const state = reactive({
+  isVisible: false,
+});
+const setVisibility = (isVisible) => {
+  state.isVisible = isVisible;
+};
+
 const sidebar = {
-  namespaced: true,
-  state: () => ({
-    isVisible: false,
-  }),
-  getters: {
-    isVisible(state) {
-      return state.isVisible;
-    },
-  },
-  actions: {
-    setVisibility({ commit }, visibility) {
-      console.log('setting visibility', visibility);
-      commit('SET_VISIBILITY', visibility);
-    },
-  },
-  mutations: {
-    SET_VISIBILITY(state, visibility) {
-      console.log('mutating visibility', visibility);
-      state.isVisible = visibility;
-    },
-  },
+  state: readonly(state),
+  setVisibility,
 };
 
 export default sidebar;

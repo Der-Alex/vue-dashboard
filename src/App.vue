@@ -1,6 +1,12 @@
 <script setup>
+import { provide } from '@vue/runtime-core';
 import MainHeader from './components/ui/header/MainHeader.vue';
 import Sidebar from './components/ui/sidebar/Sidebar.vue';
+import sidebar from '@/store/modules/ui/sidebar';
+import swapi from '@/store/modules/ui/swapi';
+
+provide('sidebar', sidebar);
+provide('swapi', swapi);
 </script>
 
 <template>

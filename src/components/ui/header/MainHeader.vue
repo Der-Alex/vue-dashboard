@@ -5,11 +5,11 @@
 </template>
 
 <script setup>
-import { useStore } from 'vuex';
 import { MenuIcon } from '@heroicons/vue/outline';
-const store = useStore();
+import { inject } from '@vue/runtime-core';
+
+const sidebar = inject('sidebar');
 const toggleSidebar = () => {
-  const visible = store.getters['sidebar/isVisible'];
-  store.dispatch('sidebar/setVisibility', !visible);
+  sidebar.setVisibility(!sidebar.state.isVisible);
 };
 </script>

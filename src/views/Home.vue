@@ -1,5 +1,10 @@
 <script setup>
+import { inject } from '@vue/runtime-core';
 import Card from '../components/ui/card/Card.vue';
+const swapi = inject('swapi');
+
+const people = await swapi.fetchPeople(1);
+console.log('people:', people);
 </script>
 
 <template>

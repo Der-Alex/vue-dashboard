@@ -1,10 +1,1 @@
-import { createStore } from 'vuex';
-import sidebar from './modules/ui/sidebar';
-
-const store = createStore({
-  modules: {
-    sidebar,
-  },
-});
-
-export default store;
+// We don't use the vuex store anymore
