@@ -1,6 +1,6 @@
 <template>
-  <section class="card shadow border border-gray-800" :class="props.fullColored ? typeClass : 'bg-special-gray'">
-    <div class="header p-4 border border-t-0 border-l-0 border-r-0 border-gray-800 font-bold" :class="typeClass">
+  <section class="card shadow-md" :class="props.fullColored ? typeClass : 'bg-primary-dark'">
+    <div class="header p-4 border-b border-gray-900 font-bold" :class="typeClass">
       <slot name="card-header" />
     </div>
     <div class="content p-4">

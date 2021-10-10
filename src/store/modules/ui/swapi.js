@@ -13,6 +13,7 @@ const fetchPeople = async (index) => {
 
   const data = await result.json();
   console.log(data);
+  return data;
 };
 
 const swapi = {

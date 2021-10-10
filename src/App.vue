@@ -10,7 +10,7 @@ provide('swapi', swapi);
 </script>
 
 <template>
-  <div class="dashboard bg-special-black text-gray-200 w-screen h-screen grid grid-cols-1">
+  <div class="dashboard bg-primary-darker text-gray-200 w-screen h-screen grid grid-cols-1">
     <main-header />
     <sidebar />
     <main class="p-8 md:pl-72 transition-all">

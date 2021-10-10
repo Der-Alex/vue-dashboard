@@ -9,9 +9,31 @@ module.exports = {
       },
       backgroundColor: (theme) => ({
         ...theme('colors'),
-        'special-black': '#141212',
-        'special-gray': '#1c1919',
+        'primary-darkest': '#101524',
+        'primary-darker': '#141b2d',
+        'primary-dark': '#1f2940',
       }),
+      borderColor: (theme) => ({
+        ...theme('colors'),
+        DEFAULT: theme('colors.gray.300', 'currentColor'),
+        'primary-darkest': '#101524',
+        'primary-darker': '#141b2d',
+        'primary-dark': '#1f2940',
+      }),
+      boxShadow: {
+        sm: '0 1px 2px 0 #101524',
+        DEFAULT: '0 1px 3px #101524',
+        md: '0 4px 6px -1px #101524',
+        lg: '0 10px 15px -3px #101524',
+        xl: '0 20px 25px -5px #101524',
+        '2xl': '0 25px 50px -12px #101524',
+        '3xl': '0 35px 60px -15px #101524',
+        inner: 'inset 0 2px 4px 0 #101524',
+        none: 'none',
+      },
+      transitionProperty: {
+        rotate: 'rotate',
+      },
     },
   },
   variants: {
