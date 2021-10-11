@@ -37,7 +37,13 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+      ringColor: ['active'],
+      ringWidth: ['active'],
+      ringOpacity: ['active'],
+      outline: ['active'],
+    },
   },
   plugins: [],
 };
