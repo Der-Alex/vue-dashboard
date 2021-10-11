@@ -20,6 +20,11 @@ module.exports = {
         'primary-darker': '#141b2d',
         'primary-dark': '#1f2940',
       }),
+      textColor: {
+        'primary-darkest': '#101524',
+        'primary-darker': '#141b2d',
+        'primary-dark': '#1f2940',
+      },
       boxShadow: {
         sm: '0 1px 2px 0 #101524',
         DEFAULT: '0 1px 3px #101524',
@@ -45,5 +50,5 @@ module.exports = {
       outline: ['active'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/custom-forms')],
 };

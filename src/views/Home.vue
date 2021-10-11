@@ -5,6 +5,7 @@ import { onMounted } from '@vue/runtime-core';
 import Card from '../components/ui/card/Card.vue';
 import ButtonBase from '../components/ui/button/ButtonBase.vue';
 import { CloudDownloadIcon } from '@heroicons/vue/outline';
+import InputBase from '../components/ui/form/InputBase.vue';
 const swapi = inject('swapi');
 let state = reactive({
   person: {},
@@ -34,6 +35,15 @@ onMounted(async () => {
               <template v-slot:buttonText>Hallo</template>
               <template v-slot:icon><cloud-download-icon class="h-4 w-4" /></template>
             </button-base>
+          </p>
+          <p>
+            <input-base type="text" label="First Name" id="first-name" />
+            <input-base type="email" label="E-Mail" id="email" />
+            <input-base type="checkbox" />
+            <input-base type="radio" />
+            <input-base type="password" />
+            <input-base type="number" />
+            <input-base type="date" />
           </p>
         </div>
         <p v-else>fetching</p>
