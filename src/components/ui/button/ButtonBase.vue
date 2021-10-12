@@ -1,5 +1,5 @@
 <template>
-  <button class="flex items-center justify-between px-4 py-2" :class="typeClass">
+  <button class="flex items-center justify-between pl-4 pr-2 py-2" :class="typeClass">
     <span>
       <slot name="buttonText" />
     </span>

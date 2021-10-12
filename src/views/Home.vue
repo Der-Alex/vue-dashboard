@@ -33,7 +33,7 @@ onMounted(async () => {
           <p>
             <button-base @click="blub">
               <template v-slot:buttonText>Hallo</template>
-              <template v-slot:icon><cloud-download-icon class="h-4 w-4" /></template>
+              <template v-slot:icon><cloud-download-icon class="h-5 w-5" /></template>
             </button-base>
           </p>
           <p>

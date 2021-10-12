@@ -1,7 +1,7 @@
 <template>
   <div class="control flex flex-col justify-center py-2">
     <label class="text-blue-400 pb-1" :for="id">{{ label }}</label>
-    <input :id="id" :type="type" class="p-1 bg-primary-darker focus:outline-none focus:ring-2 focus:ring-blue-600" :class="typeClass" />
+    <input :id="id" :type="type" class="p-1 bg-primary-darker border-0 focus:outline-none focus:ring-2 focus:ring-blue-600" :class="typeClass" />
   </div>
 </template>
 

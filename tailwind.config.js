@@ -50,5 +50,5 @@ module.exports = {
       outline: ['active'],
     },
   },
-  plugins: [require('@tailwindcss/custom-forms')],
+  plugins: [require('@tailwindcss/forms')],
 };
